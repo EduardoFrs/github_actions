@@ -26,7 +26,7 @@ jobs:
 
     - name: Set Docker image name
       run: |
-        LOWERCASE_OWNER=${{ github.repository_owner, }}
+        LOWERCASE_OWNER=${{ github.repository_owner }}
         IMAGE_NAME="ghcr.io/${LOWERCASE_OWNER}/docker-image:latest"
         echo "IMAGE_NAME=${IMAGE_NAME}" >> $GITHUB_ENV
 
